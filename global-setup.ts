@@ -10,7 +10,7 @@ const authFile = path.join(process.cwd(), 'auth.json');
 async function globalSetup() {
   Logger.info('Running global setup: logging in...');
 
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({ headless: false });
   const context = await browser.newContext();
   const page = await context.newPage();
 
@@ -23,7 +23,7 @@ async function globalSetup() {
   Logger.info(`Login successful for user, ${process.env.APP_USERNAME?.slice(0, 3)}***`);
 
   // Wait until dashboard loads to ensure cookies are captured
-  await expect(page.getByText('Discover & Book')).toBeVisible({ timeout: 30000 });
+  await expect(page.getByText('Discover & Book')).toBeVisible();
   await expect(page.getByText('From tech conferences to live concerts, sports events to cultural festivals — find experiences that inspire you.')).toBeVisible({ timeout: 30000 });
   await context.storageState({ path: authFile });
   await browser.close();
