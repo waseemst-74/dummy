@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Use latest JS features
+    "module": "CommonJS", // Node.js compatibility
+    "lib": [
+      "ESNext",
+      "DOM"
+    ], // Include browser + modern JS APIs
+    "outDir": "dist", // Compiled output folder
+    "rootDir": ".", // Project root
+    "strict": true, // Enable all strict type checks
+    "esModuleInterop": true, // Allow default imports from CommonJS
+    "moduleResolution": "node", // Resolve modules like Node.js
+    "resolveJsonModule": true, // Import JSON files directly
+    "skipLibCheck": true, // Skip type checks for node_modules
+    "forceConsistentCasingInFileNames": true,
+    "types": [
+      "node",
+      "@playwright/test"
+    ], // Include Playwright + Node types
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true, // Prevent untyped variables
+    "noUnusedLocals": true, // Warn on unused local variables
+    "noUnusedParameters": true, // Warn on unused function params
+    "sourceMap": true, // Generate source maps for debugging
+    "incremental": true,
+    "ignoreDeprecations": "6.0" // Faster builds with incremental compilation
+  },
+  "include": [
+    "tests/**/*.ts",
+    "pages/**/*.ts",
+    "utils/**/*.ts",
+    "fixtures/**/*.ts",
+    "playwright.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "reports",
+    "screenshots"
+  ]
+}

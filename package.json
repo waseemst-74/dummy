@@ -1,0 +1,26 @@
+{
+  "name": "git2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:qa": "powershell -Command \"$env:TARGET_ENV='QA'; npx playwright test --config=playwright.config2.js tests/baseurl.spec.js --headed\"",
+    "test:uat": "powershell -Command \"$env:TARGET_ENV='UAT'; npx playwright test --config=playwright.config2.js tests/baseurl.spec.js --headed\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.2.0",
+    "allure-playwright": "^3.10.2",
+    "eslint": "^10.8.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "prettier": "^3.9.6"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
