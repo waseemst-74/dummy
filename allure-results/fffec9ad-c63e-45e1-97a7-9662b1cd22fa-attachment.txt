@@ -1,0 +1,23 @@
+[INFO] 10/8/2026, 8:35:49 pm : Initializing POManager with logged-in page...
+[INFO] 10/8/2026, 8:35:49 pm : Navigating to dashboard before each test...
+Navigated to: https://eventhub.rahulshettyacademy.com/
+[INFO] 10/8/2026, 8:35:57 pm : Searching for an opportunity with invalid data...
+[INFO] 10/8/2026, 8:35:57 pm : Looking for Hollywood Monsoon Night card...
+[INFO] 10/8/2026, 8:35:57 pm : Clicking element: locator('article:has-text(\'Hollywood Monsoon Night — Los Angeles\')').locator('text=Book Now')
+[INFO] 10/8/2026, 8:35:59 pm : Clicked Book Now for Hollywood Monsoon Night — Los Angeles.
+[INFO] 10/8/2026, 8:36:00 pm : Clicked on Book Now button for Hollywood Monsoon Night
+[INFO] 10/8/2026, 8:36:00 pm : Filling booking form...
+[INFO] 10/8/2026, 8:36:00 pm : Typing into locator('#customerName'): Stephen Medhurst
+[INFO] 10/8/2026, 8:36:00 pm : Typing into locator('#customer-email'): Lola_Champlin@gmail.com
+[INFO] 10/8/2026, 8:36:00 pm : Typing into locator('#phone'): 5714417927
+[INFO] 10/8/2026, 8:36:00 pm : Adding 3 members...
+[INFO] 10/8/2026, 8:36:00 pm : Clicking element: locator('//button[@type=\'button\']').nth(1)
+[INFO] 10/8/2026, 8:36:02 pm : Clicking element: locator('//button[@type=\'button\']').nth(1)
+[INFO] 10/8/2026, 8:36:05 pm : Total price displayed: $7,500
+[INFO] 10/8/2026, 8:36:05 pm : Confirming booking...
+[INFO] 10/8/2026, 8:36:05 pm : Clicking element: locator('#confirm-booking')
+Booking Ref extracted: H-YRNRO5
+[INFO] 10/8/2026, 8:36:05 pm : View Booking details
+[INFO] 10/8/2026, 8:36:05 pm : Clicking element: getByText('View My Bookings')
+[INFO] 10/8/2026, 8:36:05 pm : Booking confirmed for the user Stephen Medhurst
+[INFO] 10/8/2026, 8:36:05 pm : All booking refs on My Bookings page: 

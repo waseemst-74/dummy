@@ -7,10 +7,6 @@ export class LoginPage extends BasePage {
     private emailInput: Locator;
     private passwordInput: Locator;
     private signInButton: Locator;
-    //private primaryOfferings: Locator;
-    /*private searchByName: Locator;
-    private errorToast: Locator;
-    private cards: Locator;*/
 
     constructor(page: Page) {
 

@@ -10,7 +10,7 @@ const authFile = path.join(process.cwd(), 'auth.json');
 async function globalSetup() {
   Logger.info('Running global setup: logging in...');
 
-  const browser = await chromium.launch({ headless: false });
+  const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext();
   const page = await context.newPage();
 
