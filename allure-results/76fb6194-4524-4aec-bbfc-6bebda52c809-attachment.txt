@@ -1,0 +1,26 @@
+[INFO] 10/8/2026, 11:39:57 pm : Initializing POManager with logged-in page...
+[INFO] 10/8/2026, 11:39:57 pm : Navigating to dashboard before each test...
+Navigated to: https://eventhub.rahulshettyacademy.com/
+[INFO] 10/8/2026, 11:39:58 pm : Searching for an opportunity with invalid data...
+[INFO] 10/8/2026, 11:39:58 pm : Looking for Hollywood Monsoon Night card...
+[INFO] 10/8/2026, 11:39:58 pm : Clicking element: locator('article:has-text(\'Hollywood Monsoon Night — Los Angeles\')').locator('text=Book Now')
+[INFO] 10/8/2026, 11:39:59 pm : Clicked Book Now for Hollywood Monsoon Night — Los Angeles.
+[INFO] 10/8/2026, 11:39:59 pm : Clicked on Book Now button for Hollywood Monsoon Night
+[INFO] 10/8/2026, 11:39:59 pm : Filling booking form...
+[INFO] 10/8/2026, 11:39:59 pm : Typing into locator('#customerName'): Devin Corwin
+[INFO] 10/8/2026, 11:39:59 pm : Typing into locator('#customer-email'): Mariana19@yahoo.com
+[INFO] 10/8/2026, 11:39:59 pm : Typing into locator('#phone'): 9515221572
+[INFO] 10/8/2026, 11:39:59 pm : Adding 1 members...
+[INFO] 10/8/2026, 11:39:59 pm : Total price displayed: $2,500
+[INFO] 10/8/2026, 11:39:59 pm : Confirming booking...
+[INFO] 10/8/2026, 11:39:59 pm : Clicking element: locator('#confirm-booking')
+Booking Ref extracted: H-UQXWDI
+[INFO] 10/8/2026, 11:40:00 pm : View Booking details
+[INFO] 10/8/2026, 11:40:00 pm : Clicking element: getByText('View My Bookings')
+[INFO] 10/8/2026, 11:40:00 pm : Booking confirmed for the user Devin Corwin
+[INFO] 10/8/2026, 11:40:00 pm : All booking refs on My Bookings page: H-UQXWDI,H-ZS6RTL,H-00RREC,H-FE0HQU,H-E93NMS
+Booking reference ID is : H-UQXWDI
+[INFO] 10/8/2026, 11:40:00 pm : Navigating to My bookings...
+[INFO] 10/8/2026, 11:40:00 pm : Clicking element: locator('#nav-bookings')
+[INFO] 10/8/2026, 11:40:00 pm : Attempting to cancel booking with ref: H-UQXWDI
+[INFO] 10/8/2026, 11:40:00 pm : Found booking card for ref: H-UQXWDI

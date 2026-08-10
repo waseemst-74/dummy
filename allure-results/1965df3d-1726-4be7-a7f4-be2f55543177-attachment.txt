@@ -1,0 +1,26 @@
+[INFO] 10/8/2026, 11:56:16 pm : Initializing POManager with logged-in page...
+[INFO] 10/8/2026, 11:56:16 pm : Navigating to dashboard before each test...
+Navigated to: https://eventhub.rahulshettyacademy.com/
+[INFO] 10/8/2026, 11:56:17 pm : Searching for an opportunity with invalid data...
+[INFO] 10/8/2026, 11:56:17 pm : Looking for Hollywood Monsoon Night card...
+[INFO] 10/8/2026, 11:56:17 pm : Clicking element: locator('article:has-text(\'Hollywood Monsoon Night — Los Angeles\')').locator('text=Book Now')
+[INFO] 10/8/2026, 11:56:18 pm : Clicked Book Now for Hollywood Monsoon Night — Los Angeles.
+[INFO] 10/8/2026, 11:56:18 pm : Clicked on Book Now button for Hollywood Monsoon Night
+[INFO] 10/8/2026, 11:56:18 pm : Filling booking form...
+[INFO] 10/8/2026, 11:56:18 pm : Typing into locator('#customerName'): Mrs. Opal Trantow PhD
+[INFO] 10/8/2026, 11:56:18 pm : Typing into locator('#customer-email'): Susan_Hickle31@hotmail.com
+[INFO] 10/8/2026, 11:56:18 pm : Typing into locator('#phone'): 8588607470
+[INFO] 10/8/2026, 11:56:18 pm : Adding 1 members...
+[INFO] 10/8/2026, 11:56:18 pm : Total price displayed: $2,500
+[INFO] 10/8/2026, 11:56:18 pm : Confirming booking...
+[INFO] 10/8/2026, 11:56:18 pm : Clicking element: locator('#confirm-booking')
+Booking Ref extracted: H-CRZ5IB
+[INFO] 10/8/2026, 11:56:19 pm : View Booking details
+[INFO] 10/8/2026, 11:56:19 pm : Clicking element: getByText('View My Bookings')
+[INFO] 10/8/2026, 11:56:19 pm : Booking confirmed for the user Mrs. Opal Trantow PhD
+[INFO] 10/8/2026, 11:56:19 pm : All booking refs on My Bookings page: H-CRZ5IB,H-8O7JSD,H-VJS5CJ,H-00RREC,H-FE0HQU,H-E93NMS
+Booking reference ID is : H-CRZ5IB
+[INFO] 10/8/2026, 11:56:19 pm : Navigating to My bookings...
+[INFO] 10/8/2026, 11:56:19 pm : Clicking element: locator('#nav-bookings')
+[INFO] 10/8/2026, 11:56:19 pm : Attempting to cancel booking with ref: H-CRZ5IB
+[INFO] 10/8/2026, 11:56:19 pm : Found booking card for ref: H-CRZ5IB

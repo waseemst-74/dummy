@@ -1,0 +1,26 @@
+[INFO] 10/8/2026, 11:30:27 pm : Initializing POManager with logged-in page...
+[INFO] 10/8/2026, 11:30:27 pm : Navigating to dashboard before each test...
+Navigated to: https://eventhub.rahulshettyacademy.com/
+[INFO] 10/8/2026, 11:30:35 pm : Searching for an opportunity with invalid data...
+[INFO] 10/8/2026, 11:30:35 pm : Looking for Hollywood Monsoon Night card...
+[INFO] 10/8/2026, 11:30:35 pm : Clicking element: locator('article:has-text(\'Hollywood Monsoon Night — Los Angeles\')').locator('text=Book Now')
+[INFO] 10/8/2026, 11:30:38 pm : Clicked Book Now for Hollywood Monsoon Night — Los Angeles.
+[INFO] 10/8/2026, 11:30:41 pm : Clicked on Book Now button for Hollywood Monsoon Night
+[INFO] 10/8/2026, 11:30:41 pm : Filling booking form...
+[INFO] 10/8/2026, 11:30:41 pm : Typing into locator('#customerName'): Celia Davis
+[INFO] 10/8/2026, 11:30:41 pm : Typing into locator('#customer-email'): Judson83@hotmail.com
+[INFO] 10/8/2026, 11:30:41 pm : Typing into locator('#phone'): 2296801699
+[INFO] 10/8/2026, 11:30:41 pm : Adding 1 members...
+[INFO] 10/8/2026, 11:30:41 pm : Total price displayed: $2,500
+[INFO] 10/8/2026, 11:30:41 pm : Confirming booking...
+[INFO] 10/8/2026, 11:30:41 pm : Clicking element: locator('#confirm-booking')
+Booking Ref extracted: H-Q8WOBW
+[INFO] 10/8/2026, 11:30:43 pm : View Booking details
+[INFO] 10/8/2026, 11:30:43 pm : Clicking element: getByText('View My Bookings')
+[INFO] 10/8/2026, 11:30:43 pm : Booking confirmed for the user Celia Davis
+[INFO] 10/8/2026, 11:30:45 pm : All booking refs on My Bookings page: H-Q8WOBW,H-YBCR8Y,H-CRK7AH,H-ZS6RTL,H-00RREC,H-FE0HQU,H-E93NMS,H-BLV7AK
+Booking reference ID is : H-Q8WOBW
+[INFO] 10/8/2026, 11:30:45 pm : Navigating to My bookings...
+[INFO] 10/8/2026, 11:30:45 pm : Clicking element: locator('#nav-bookings')
+[INFO] 10/8/2026, 11:30:45 pm : Attempting to cancel booking with ref: H-Q8WOBW
+[INFO] 10/8/2026, 11:30:45 pm : Found booking card for ref: H-Q8WOBW

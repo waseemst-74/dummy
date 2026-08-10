@@ -1,0 +1,26 @@
+[INFO] 11/8/2026, 12:02:30 am : Initializing POManager with logged-in page...
+[INFO] 11/8/2026, 12:02:30 am : Navigating to dashboard before each test...
+Navigated to: https://eventhub.rahulshettyacademy.com/
+[INFO] 11/8/2026, 12:02:31 am : Searching for an opportunity with invalid data...
+[INFO] 11/8/2026, 12:02:31 am : Looking for Hollywood Monsoon Night card...
+[INFO] 11/8/2026, 12:02:31 am : Clicking element: locator('article:has-text(\'Hollywood Monsoon Night — Los Angeles\')').locator('text=Book Now')
+[INFO] 11/8/2026, 12:02:32 am : Clicked Book Now for Hollywood Monsoon Night — Los Angeles.
+[INFO] 11/8/2026, 12:02:32 am : Clicked on Book Now button for Hollywood Monsoon Night
+[INFO] 11/8/2026, 12:02:32 am : Filling booking form...
+[INFO] 11/8/2026, 12:02:32 am : Typing into locator('#customerName'): Dallas Rutherford
+[INFO] 11/8/2026, 12:02:32 am : Typing into locator('#customer-email'): Walton_Mueller@hotmail.com
+[INFO] 11/8/2026, 12:02:32 am : Typing into locator('#phone'): 5798065585
+[INFO] 11/8/2026, 12:02:32 am : Adding 1 members...
+[INFO] 11/8/2026, 12:02:32 am : Total price displayed: $2,500
+[INFO] 11/8/2026, 12:02:33 am : Confirming booking...
+[INFO] 11/8/2026, 12:02:33 am : Clicking element: locator('#confirm-booking')
+Booking Ref extracted: H-LP9R3H
+[INFO] 11/8/2026, 12:02:34 am : View Booking details
+[INFO] 11/8/2026, 12:02:34 am : Clicking element: getByText('View My Bookings')
+[INFO] 11/8/2026, 12:02:34 am : Booking confirmed for the user Dallas Rutherford
+[INFO] 11/8/2026, 12:02:34 am : All booking refs on My Bookings page: H-LP9R3H
+Booking reference ID is : H-LP9R3H
+[INFO] 11/8/2026, 12:02:34 am : Navigating to My bookings...
+[INFO] 11/8/2026, 12:02:34 am : Clicking element: locator('#nav-bookings')
+[INFO] 11/8/2026, 12:02:34 am : Attempting to cancel booking with ref: H-LP9R3H
+[INFO] 11/8/2026, 12:02:35 am : Found booking card for ref: H-LP9R3H

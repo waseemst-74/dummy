@@ -1,0 +1,26 @@
+[INFO] 10/8/2026, 11:09:25 pm : Initializing POManager with logged-in page...
+[INFO] 10/8/2026, 11:09:25 pm : Navigating to dashboard before each test...
+Navigated to: https://eventhub.rahulshettyacademy.com/
+[INFO] 10/8/2026, 11:09:28 pm : Searching for an opportunity with invalid data...
+[INFO] 10/8/2026, 11:09:28 pm : Looking for Hollywood Monsoon Night card...
+[INFO] 10/8/2026, 11:09:28 pm : Clicking element: locator('article:has-text(\'Hollywood Monsoon Night — Los Angeles\')').locator('text=Book Now')
+[INFO] 10/8/2026, 11:09:30 pm : Clicked Book Now for Hollywood Monsoon Night — Los Angeles.
+[INFO] 10/8/2026, 11:09:32 pm : Clicked on Book Now button for Hollywood Monsoon Night
+[INFO] 10/8/2026, 11:09:32 pm : Filling booking form...
+[INFO] 10/8/2026, 11:09:32 pm : Typing into locator('#customerName'): Genevieve Baumbach
+[INFO] 10/8/2026, 11:09:32 pm : Typing into locator('#customer-email'): Jeremiah_Ruecker35@hotmail.com
+[INFO] 10/8/2026, 11:09:32 pm : Typing into locator('#phone'): 2687869934
+[INFO] 10/8/2026, 11:09:32 pm : Adding 1 members...
+[INFO] 10/8/2026, 11:09:32 pm : Total price displayed: $2,500
+[INFO] 10/8/2026, 11:09:32 pm : Confirming booking...
+[INFO] 10/8/2026, 11:09:32 pm : Clicking element: locator('#confirm-booking')
+Booking Ref extracted: H-LC0ZQY
+[INFO] 10/8/2026, 11:09:32 pm : View Booking details
+[INFO] 10/8/2026, 11:09:32 pm : Clicking element: getByText('View My Bookings')
+[INFO] 10/8/2026, 11:09:32 pm : Booking confirmed for the user Genevieve Baumbach
+[INFO] 10/8/2026, 11:09:33 pm : All booking refs on My Bookings page: H-LC0ZQY,H-E8SU19,H-CRK7AH,H-ZS6RTL,H-00RREC,H-FE0HQU,H-E93NMS,H-BLV7AK
+Booking reference ID is : H-LC0ZQY
+[INFO] 10/8/2026, 11:09:33 pm : Navigating to My bookings...
+[INFO] 10/8/2026, 11:09:33 pm : Clicking element: locator('#nav-bookings')
+[INFO] 10/8/2026, 11:09:33 pm : Found 8 booking cards
+[INFO] 10/8/2026, 11:09:33 pm : Found matching booking card for ref: H-LC0ZQY

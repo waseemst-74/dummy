@@ -1,0 +1,27 @@
+[INFO] 11/8/2026, 12:04:19 am : Initializing POManager with logged-in page...
+[INFO] 11/8/2026, 12:04:20 am : Navigating to dashboard before each test...
+Navigated to: https://eventhub.rahulshettyacademy.com/
+[INFO] 11/8/2026, 12:04:20 am : Searching for an opportunity with invalid data...
+[INFO] 11/8/2026, 12:04:20 am : Looking for Hollywood Monsoon Night card...
+[INFO] 11/8/2026, 12:04:20 am : Clicking element: locator('article:has-text(\'Hollywood Monsoon Night — Los Angeles\')').locator('text=Book Now')
+[INFO] 11/8/2026, 12:04:21 am : Clicked Book Now for Hollywood Monsoon Night — Los Angeles.
+[INFO] 11/8/2026, 12:04:21 am : Clicked on Book Now button for Hollywood Monsoon Night
+[INFO] 11/8/2026, 12:04:21 am : Filling booking form...
+[INFO] 11/8/2026, 12:04:21 am : Typing into locator('#customerName'): Emmanuel Kunde
+[INFO] 11/8/2026, 12:04:22 am : Typing into locator('#customer-email'): Nakia79@gmail.com
+[INFO] 11/8/2026, 12:04:22 am : Typing into locator('#phone'): 2885477885
+[INFO] 11/8/2026, 12:04:22 am : Adding 1 members...
+[INFO] 11/8/2026, 12:04:22 am : Total price displayed: $2,500
+[INFO] 11/8/2026, 12:04:22 am : Confirming booking...
+[INFO] 11/8/2026, 12:04:22 am : Clicking element: locator('#confirm-booking')
+Booking Ref extracted: H-8WLKMS
+[INFO] 11/8/2026, 12:04:22 am : View Booking details
+[INFO] 11/8/2026, 12:04:22 am : Clicking element: getByText('View My Bookings')
+[INFO] 11/8/2026, 12:04:22 am : Booking confirmed for the user Emmanuel Kunde
+[INFO] 11/8/2026, 12:04:23 am : All booking refs on My Bookings page: H-8WLKMS
+Booking reference ID is : H-8WLKMS
+[INFO] 11/8/2026, 12:04:23 am : Navigating to My bookings...
+[INFO] 11/8/2026, 12:04:23 am : Clicking element: locator('#nav-bookings')
+[INFO] 11/8/2026, 12:04:23 am : Attempting to cancel booking with ref: H-8WLKMS
+[INFO] 11/8/2026, 12:04:23 am : Found booking card for ref: H-8WLKMS
+[INFO] 11/8/2026, 12:04:26 am : Booking with ref H-8WLKMS successfully cancelled

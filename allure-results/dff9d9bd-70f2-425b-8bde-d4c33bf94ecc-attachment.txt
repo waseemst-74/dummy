@@ -1,0 +1,26 @@
+[INFO] 10/8/2026, 11:48:08 pm : Initializing POManager with logged-in page...
+[INFO] 10/8/2026, 11:48:08 pm : Navigating to dashboard before each test...
+Navigated to: https://eventhub.rahulshettyacademy.com/
+[INFO] 10/8/2026, 11:48:09 pm : Searching for an opportunity with invalid data...
+[INFO] 10/8/2026, 11:48:09 pm : Looking for Hollywood Monsoon Night card...
+[INFO] 10/8/2026, 11:48:09 pm : Clicking element: locator('article:has-text(\'Hollywood Monsoon Night — Los Angeles\')').locator('text=Book Now')
+[INFO] 10/8/2026, 11:48:10 pm : Clicked Book Now for Hollywood Monsoon Night — Los Angeles.
+[INFO] 10/8/2026, 11:48:10 pm : Clicked on Book Now button for Hollywood Monsoon Night
+[INFO] 10/8/2026, 11:48:10 pm : Filling booking form...
+[INFO] 10/8/2026, 11:48:10 pm : Typing into locator('#customerName'): Maxie Shields
+[INFO] 10/8/2026, 11:48:10 pm : Typing into locator('#customer-email'): Wade.Littel@hotmail.com
+[INFO] 10/8/2026, 11:48:10 pm : Typing into locator('#phone'): 9248667533
+[INFO] 10/8/2026, 11:48:10 pm : Adding 1 members...
+[INFO] 10/8/2026, 11:48:10 pm : Total price displayed: $2,500
+[INFO] 10/8/2026, 11:48:10 pm : Confirming booking...
+[INFO] 10/8/2026, 11:48:10 pm : Clicking element: locator('#confirm-booking')
+Booking Ref extracted: H-VJS5CJ
+[INFO] 10/8/2026, 11:48:10 pm : View Booking details
+[INFO] 10/8/2026, 11:48:10 pm : Clicking element: getByText('View My Bookings')
+[INFO] 10/8/2026, 11:48:11 pm : Booking confirmed for the user Maxie Shields
+[INFO] 10/8/2026, 11:48:11 pm : All booking refs on My Bookings page: H-VJS5CJ,H-00RREC,H-FE0HQU,H-E93NMS
+Booking reference ID is : H-VJS5CJ
+[INFO] 10/8/2026, 11:48:11 pm : Navigating to My bookings...
+[INFO] 10/8/2026, 11:48:11 pm : Clicking element: locator('#nav-bookings')
+[INFO] 10/8/2026, 11:48:11 pm : Attempting to cancel booking with ref: H-VJS5CJ
+[INFO] 10/8/2026, 11:48:11 pm : Found booking card for ref: H-VJS5CJ

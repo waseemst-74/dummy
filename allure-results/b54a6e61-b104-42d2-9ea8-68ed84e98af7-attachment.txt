@@ -1,0 +1,27 @@
+[INFO] 11/8/2026, 12:01:37 am : Initializing POManager with logged-in page...
+[INFO] 11/8/2026, 12:01:37 am : Navigating to dashboard before each test...
+Navigated to: https://eventhub.rahulshettyacademy.com/
+[INFO] 11/8/2026, 12:01:38 am : Searching for an opportunity with invalid data...
+[INFO] 11/8/2026, 12:01:38 am : Looking for Hollywood Monsoon Night card...
+[INFO] 11/8/2026, 12:01:38 am : Clicking element: locator('article:has-text(\'Hollywood Monsoon Night — Los Angeles\')').locator('text=Book Now')
+[INFO] 11/8/2026, 12:01:39 am : Clicked Book Now for Hollywood Monsoon Night — Los Angeles.
+[INFO] 11/8/2026, 12:01:40 am : Clicked on Book Now button for Hollywood Monsoon Night
+[INFO] 11/8/2026, 12:01:40 am : Filling booking form...
+[INFO] 11/8/2026, 12:01:40 am : Typing into locator('#customerName'): Rosalie Dickinson
+[INFO] 11/8/2026, 12:01:40 am : Typing into locator('#customer-email'): Paulette90@yahoo.com
+[INFO] 11/8/2026, 12:01:40 am : Typing into locator('#phone'): 3856392707
+[INFO] 11/8/2026, 12:01:40 am : Adding 1 members...
+[INFO] 11/8/2026, 12:01:40 am : Total price displayed: $2,500
+[INFO] 11/8/2026, 12:01:40 am : Confirming booking...
+[INFO] 11/8/2026, 12:01:40 am : Clicking element: locator('#confirm-booking')
+Booking Ref extracted: H-KX33W9
+[INFO] 11/8/2026, 12:01:40 am : View Booking details
+[INFO] 11/8/2026, 12:01:40 am : Clicking element: getByText('View My Bookings')
+[INFO] 11/8/2026, 12:01:40 am : Booking confirmed for the user Rosalie Dickinson
+[INFO] 11/8/2026, 12:01:41 am : All booking refs on My Bookings page: H-KX33W9,H-CRZ5IB,H-VJS5CJ,H-00RREC,H-FE0HQU
+Booking reference ID is : H-KX33W9
+[INFO] 11/8/2026, 12:01:41 am : Navigating to My bookings...
+[INFO] 11/8/2026, 12:01:41 am : Clicking element: locator('#nav-bookings')
+[INFO] 11/8/2026, 12:01:41 am : Attempting to cancel booking with ref: H-KX33W9
+[INFO] 11/8/2026, 12:01:41 am : Found booking card for ref: H-KX33W9
+[INFO] 11/8/2026, 12:01:44 am : Booking with ref H-KX33W9 successfully cancelled

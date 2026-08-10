@@ -1,0 +1,338 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: confirmBooking.spec.ts >> Confirm Booking >> Booking lifecycle for Hollywood Monsoon Night
+- Location: tests\confirmBooking.spec.ts:30:9
+
+# Error details
+
+```
+Error: expect(locator).not.toContainText(expected) failed
+
+Locator: locator('.booking-ref')
+Expected substring: not "H-CRK7AH"
+Error: strict mode violation: locator('.booking-ref') resolved to 6 elements:
+    1) <span class="booking-ref font-mono text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-lg">H-CRK7AH</span> aka getByText('H-CRK7AH', { exact: true })
+    2) <span class="booking-ref font-mono text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-lg">H-ZS6RTL</span> aka getByText('H-ZS6RTL')
+    3) <span class="booking-ref font-mono text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-lg">H-00RREC</span> aka getByText('H-00RREC')
+    4) <span class="booking-ref font-mono text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-lg">H-FE0HQU</span> aka getByText('H-FE0HQU')
+    5) <span class="booking-ref font-mono text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-lg">H-E93NMS</span> aka getByText('H-E93NMS')
+    6) <span class="booking-ref font-mono text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-lg">H-BLV7AK</span> aka getByText('H-BLV7AK')
+
+Call log:
+  - Expect "not toContainText" with timeout 30000ms
+  - waiting for locator('.booking-ref')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "EventHub" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e7]
+        - generic [ref=e9]: EventHub
+      - generic [ref=e10]:
+        - link "Home" [ref=e11] [cursor=pointer]:
+          - /url: /
+        - link "Events" [ref=e12] [cursor=pointer]:
+          - /url: /events
+        - link "My Bookings" [ref=e13] [cursor=pointer]:
+          - /url: /bookings
+        - link "API Docs" [ref=e14] [cursor=pointer]:
+          - /url: https://api.eventhub.rahulshettyacademy.com/api/docs
+        - button "Admin" [ref=e16] [cursor=pointer]:
+          - text: Admin
+          - img [ref=e17]
+        - generic [ref=e19]:
+          - generic "testclaudeone1@gmail.com" [ref=e20]
+          - button "Logout" [ref=e21] [cursor=pointer]
+  - main [ref=e22]:
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - heading "My Bookings" [level=1] [ref=e26]
+          - paragraph [ref=e27]: View and manage all your ticket bookings
+        - generic [ref=e28]:
+          - button "Clear all bookings" [ref=e29] [cursor=pointer]
+          - paragraph [ref=e30]: Do this often for clean test data.
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - generic [ref=e34]:
+              - generic [ref=e35]:
+                - generic [ref=e36]: H-CRK7AH
+                - generic [ref=e37]: confirmed
+                - generic [ref=e38]: "#116853"
+              - heading "Hollywood Monsoon Night — Los Angeles" [level=3] [ref=e39]
+              - generic [ref=e40]:
+                - generic [ref=e41]: 📅 12 Jul 2026
+                - generic [ref=e42]: 🎫 1 ticket
+                - generic [ref=e43]: 📍 Los Angeles
+                - generic [ref=e44]: 🗓 Booked 10 Aug 2026
+            - generic [ref=e45]:
+              - paragraph [ref=e46]: $2,500
+              - paragraph [ref=e47]: total
+          - generic [ref=e48]:
+            - link "View Details" [ref=e49] [cursor=pointer]:
+              - /url: /bookings/116853
+              - button "View Details" [ref=e50]
+            - button "Cancel Booking" [active] [ref=e51] [cursor=pointer]
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - generic [ref=e54]:
+              - generic [ref=e55]:
+                - generic [ref=e56]: H-ZS6RTL
+                - generic [ref=e57]: confirmed
+                - generic [ref=e58]: "#116833"
+              - heading "Hollywood Monsoon Night — Los Angeles" [level=3] [ref=e59]
+              - generic [ref=e60]:
+                - generic [ref=e61]: 📅 12 Jul 2026
+                - generic [ref=e62]: 🎫 1 ticket
+                - generic [ref=e63]: 📍 Los Angeles
+                - generic [ref=e64]: 🗓 Booked 10 Aug 2026
+            - generic [ref=e65]:
+              - paragraph [ref=e66]: $2,500
+              - paragraph [ref=e67]: total
+          - generic [ref=e68]:
+            - link "View Details" [ref=e69] [cursor=pointer]:
+              - /url: /bookings/116833
+              - button "View Details" [ref=e70]
+            - button "Cancel Booking" [ref=e71] [cursor=pointer]
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]:
+              - generic [ref=e75]:
+                - generic [ref=e76]: H-00RREC
+                - generic [ref=e77]: confirmed
+                - generic [ref=e78]: "#116818"
+              - heading "Hollywood Monsoon Night — Los Angeles" [level=3] [ref=e79]
+              - generic [ref=e80]:
+                - generic [ref=e81]: 📅 12 Jul 2026
+                - generic [ref=e82]: 🎫 1 ticket
+                - generic [ref=e83]: 📍 Los Angeles
+                - generic [ref=e84]: 🗓 Booked 10 Aug 2026
+            - generic [ref=e85]:
+              - paragraph [ref=e86]: $2,500
+              - paragraph [ref=e87]: total
+          - generic [ref=e88]:
+            - link "View Details" [ref=e89] [cursor=pointer]:
+              - /url: /bookings/116818
+              - button "View Details" [ref=e90]
+            - button "Cancel Booking" [ref=e91] [cursor=pointer]
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - generic [ref=e94]:
+              - generic [ref=e95]:
+                - generic [ref=e96]: H-FE0HQU
+                - generic [ref=e97]: confirmed
+                - generic [ref=e98]: "#116738"
+              - heading "Hollywood Monsoon Night — Los Angeles" [level=3] [ref=e99]
+              - generic [ref=e100]:
+                - generic [ref=e101]: 📅 12 Jul 2026
+                - generic [ref=e102]: 🎫 1 ticket
+                - generic [ref=e103]: 📍 Los Angeles
+                - generic [ref=e104]: 🗓 Booked 10 Aug 2026
+            - generic [ref=e105]:
+              - paragraph [ref=e106]: $2,500
+              - paragraph [ref=e107]: total
+          - generic [ref=e108]:
+            - link "View Details" [ref=e109] [cursor=pointer]:
+              - /url: /bookings/116738
+              - button "View Details" [ref=e110]
+            - button "Cancel Booking" [ref=e111] [cursor=pointer]
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - generic [ref=e114]:
+              - generic [ref=e115]:
+                - generic [ref=e116]: H-E93NMS
+                - generic [ref=e117]: confirmed
+                - generic [ref=e118]: "#116734"
+              - heading "Hollywood Monsoon Night — Los Angeles" [level=3] [ref=e119]
+              - generic [ref=e120]:
+                - generic [ref=e121]: 📅 12 Jul 2026
+                - generic [ref=e122]: 🎫 1 ticket
+                - generic [ref=e123]: 📍 Los Angeles
+                - generic [ref=e124]: 🗓 Booked 10 Aug 2026
+            - generic [ref=e125]:
+              - paragraph [ref=e126]: $2,500
+              - paragraph [ref=e127]: total
+          - generic [ref=e128]:
+            - link "View Details" [ref=e129] [cursor=pointer]:
+              - /url: /bookings/116734
+              - button "View Details" [ref=e130]
+            - button "Cancel Booking" [ref=e131] [cursor=pointer]
+        - generic [ref=e132]:
+          - generic [ref=e133]:
+            - generic [ref=e134]:
+              - generic [ref=e135]:
+                - generic [ref=e136]: H-BLV7AK
+                - generic [ref=e137]: confirmed
+                - generic [ref=e138]: "#116733"
+              - heading "Hollywood Monsoon Night — Los Angeles" [level=3] [ref=e139]
+              - generic [ref=e140]:
+                - generic [ref=e141]: 📅 12 Jul 2026
+                - generic [ref=e142]: 🎫 1 ticket
+                - generic [ref=e143]: 📍 Los Angeles
+                - generic [ref=e144]: 🗓 Booked 10 Aug 2026
+            - generic [ref=e145]:
+              - paragraph [ref=e146]: $2,500
+              - paragraph [ref=e147]: total
+          - generic [ref=e148]:
+            - link "View Details" [ref=e149] [cursor=pointer]:
+              - /url: /bookings/116733
+              - button "View Details" [ref=e150]
+            - button "Cancel Booking" [ref=e151] [cursor=pointer]
+  - contentinfo [ref=e152]:
+    - generic [ref=e153]:
+      - generic [ref=e154]:
+        - generic [ref=e155]:
+          - heading "Rahul Shetty Academy" [level=3] [ref=e156]
+          - paragraph [ref=e157]: India's leading QA automation training academy — empowering engineers to build real-world testing skills.
+        - generic [ref=e158]:
+          - heading "Popular Courses" [level=3] [ref=e159]
+          - list [ref=e160]:
+            - listitem [ref=e161]:
+              - link "Selenium WebDriver with Java" [ref=e162] [cursor=pointer]:
+                - /url: https://rahulshettyacademy.com
+            - listitem [ref=e163]:
+              - link "Playwright with JavaScript" [ref=e164] [cursor=pointer]:
+                - /url: https://rahulshettyacademy.com
+            - listitem [ref=e165]:
+              - link "RestAssured API Testing" [ref=e166] [cursor=pointer]:
+                - /url: https://rahulshettyacademy.com
+            - listitem [ref=e167]:
+              - link "Cypress End-to-End Testing" [ref=e168] [cursor=pointer]:
+                - /url: https://rahulshettyacademy.com
+            - listitem [ref=e169]:
+              - link "Appium Mobile Testing" [ref=e170] [cursor=pointer]:
+                - /url: https://rahulshettyacademy.com
+        - generic [ref=e171]:
+          - heading "QA Job Hiring Platform" [level=3] [ref=e172]
+          - paragraph [ref=e173]: Get hired faster — take skill assessments trusted by top QA employers worldwide.
+          - link "techsmarthire.com →" [ref=e174] [cursor=pointer]:
+            - /url: https://techsmarthire.com
+        - generic [ref=e175]:
+          - heading "EventHub Practice App" [level=3] [ref=e176]
+          - list [ref=e177]:
+            - listitem [ref=e178]:
+              - link "Browse Events" [ref=e179] [cursor=pointer]:
+                - /url: /events
+            - listitem [ref=e180]:
+              - link "My Bookings" [ref=e181] [cursor=pointer]:
+                - /url: /bookings
+            - listitem [ref=e182]:
+              - link "Manage Events" [ref=e183] [cursor=pointer]:
+                - /url: /admin/events
+            - listitem [ref=e184]:
+              - link "API Documentation" [ref=e185] [cursor=pointer]:
+                - /url: https://api.eventhub.rahulshettyacademy.com/api/docs
+      - generic [ref=e186]:
+        - paragraph [ref=e187]: © 2026 Rahul Shetty Academy. All rights reserved.
+        - generic [ref=e188]:
+          - link "rahulshettyacademy.com →" [ref=e189] [cursor=pointer]:
+            - /url: https://rahulshettyacademy.com
+          - link "techsmarthire.com →" [ref=e190] [cursor=pointer]:
+            - /url: https://techsmarthire.com
+  - alert [ref=e191]
+  - dialog "Cancel this booking?" [ref=e194]:
+    - generic [ref=e195]:
+      - heading "Cancel this booking?" [level=2] [ref=e196]
+      - button "Close" [ref=e197] [cursor=pointer]:
+        - img [ref=e198]
+    - generic [ref=e200]:
+      - paragraph [ref=e201]: This will cancel H-CRK7AH and release 1 seat(s) back to the event. This action cannot be undone.
+      - generic [ref=e202]:
+        - button "Cancel" [ref=e203] [cursor=pointer]
+        - button "Yes, cancel it" [ref=e204] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  1  | import dotenv from 'dotenv';
+  2  | import { test, expect } from '@playwright/test';
+  3  | import { POManager } from '../pages/POManager';
+  4  | import { Logger } from '../utils/Logger';
+  5  | import { faker } from '@faker-js/faker';
+  6  | 
+  7  | dotenv.config();
+  8  | 
+  9  | test.describe('Confirm Booking', () => {
+  10 |     let poManager: POManager;
+  11 |     let bookingRef: string;
+  12 | 
+  13 | 
+  14 |     test.beforeEach(async ({ page }) => {
+  15 |         Logger.info('Initializing POManager with logged-in page...');
+  16 |         poManager = new POManager(page);
+  17 | 
+  18 |         Logger.info('Navigating to dashboard before each test...');
+  19 |         await page.goto('/');
+  20 |         console.log('Navigated to:', page.url());
+  21 |     });
+  22 | 
+  23 |     test.afterEach(async ({ page }, testInfo) => {
+  24 |         if (testInfo.status !== testInfo.expectedStatus) {
+  25 |             Logger.error(`Test failed: ${testInfo.title}`);
+  26 |             await page.screenshot({ path: `screenshots/${testInfo.title}.png` });
+  27 |         }
+  28 |     });
+  29 | 
+  30 |     test('Booking lifecycle for Hollywood Monsoon Night', async ({ page }) => {
+  31 |         await test.step('Create booking', async () => {
+  32 |             Logger.info('Searching for an opportunity with invalid data...');
+  33 |             const dashboardPage = poManager.getDashboardPage();
+  34 |             await dashboardPage.bookHollywoodMonsoonNight();
+  35 |             Logger.info('Clicked on Book Now button for Hollywood Monsoon Night');
+  36 |             const name = faker.person.fullName();
+  37 |             const email = faker.internet.email();
+  38 |             const phone = faker.phone.number({ style: 'mobile' });
+  39 |             const eventHollywoodPage = poManager.getEventHollywoodPage();
+  40 |             await eventHollywoodPage.fillHollywoodBookingForm(name, email, phone);
+  41 |             await eventHollywoodPage.addMembers(1);
+  42 |             const totalPriceDisplayed = await eventHollywoodPage.getTotalPrice();
+  43 |             Logger.info(`Total price displayed: ${totalPriceDisplayed}`);
+  44 |             //await expect(totalPriceDisplayed).toHaveText('$7,500');
+  45 |             await expect(totalPriceDisplayed).toContain('$2,500');
+  46 |             await eventHollywoodPage.confirmBooking();
+  47 |             await expect(page.getByText('Booking Confirmed')).toBeVisible();
+  48 |             await expect(page.getByText('Your tickets are reserved.')).toBeVisible();
+  49 |             bookingRef = (await eventHollywoodPage.getBookingRef()) ?? '';
+  50 |             console.log(`Booking Ref extracted: ${bookingRef}`);
+  51 |             await expect(bookingRef).toMatch(/^H-[A-Z0-9]{6}$/);
+  52 |             await eventHollywoodPage.viewBooking()
+  53 |             await expect(page).toHaveURL(`${process.env.BASE_URL}bookings`)
+  54 |             Logger.info(`Booking confirmed for the user ${name}`);
+  55 |             await page.waitForSelector('.booking-ref');
+  56 |             const myBookingsPage = poManager.getBookHollywoodPage()
+  57 |             const allRefs = await myBookingsPage.getAllBookingRefs();
+  58 |             Logger.info(`All booking refs on My Bookings page: ${allRefs}`);
+  59 | 
+  60 |             // Assert that the bookingRef exists in the list
+  61 |             await expect(allRefs).toContain(bookingRef);
+  62 |             console.log(`Booking reference ID is : ${bookingRef}`)
+  63 | 
+  64 |         });
+  65 |         await test.step('Cancel booking', async () => {
+  66 |             Logger.info('Navigating to My bookings...');
+  67 |             const dashboardPage = poManager.getDashboardPage();
+  68 |             await dashboardPage.goToMyBookings();
+  69 |             await expect(page).toHaveURL(`${process.env.BASE_URL}bookings`)
+  70 |             const myBookingsPage = poManager.getBookHollywoodPage();
+  71 |             await myBookingsPage.cancelBookingByRef(bookingRef);
+> 72 |             await expect(page.locator('.booking-ref')).not.toContainText(bookingRef);
+     |                                                            ^ Error: expect(locator).not.toContainText(expected) failed
+  73 |             Logger.info(`Booking with ref ${bookingRef} successfully cancelled`);
+  74 |         });
+  75 |     });
+  76 | })
+```

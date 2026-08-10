@@ -1,0 +1,343 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: confirmBooking.spec.ts >> Confirm Booking >> Booking lifecycle for Hollywood Monsoon Night
+- Location: tests\confirmBooking.spec.ts:30:9
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('.booking-ref').first().locator('..').getByRole('button', { name: 'Cancel Booking' })
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "EventHub" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e7]
+        - generic [ref=e9]: EventHub
+      - generic [ref=e10]:
+        - link "Home" [ref=e11] [cursor=pointer]:
+          - /url: /
+        - link "Events" [ref=e12] [cursor=pointer]:
+          - /url: /events
+        - link "My Bookings" [active] [ref=e13] [cursor=pointer]:
+          - /url: /bookings
+        - link "API Docs" [ref=e14] [cursor=pointer]:
+          - /url: https://api.eventhub.rahulshettyacademy.com/api/docs
+        - button "Admin" [ref=e16] [cursor=pointer]:
+          - text: Admin
+          - img [ref=e17]
+        - generic [ref=e19]:
+          - generic "testclaudeone1@gmail.com" [ref=e20]
+          - button "Logout" [ref=e21] [cursor=pointer]
+  - main [ref=e22]:
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - heading "My Bookings" [level=1] [ref=e26]
+          - paragraph [ref=e27]: View and manage all your ticket bookings
+        - generic [ref=e28]:
+          - button "Clear all bookings" [ref=e29] [cursor=pointer]
+          - paragraph [ref=e30]: Do this often for clean test data.
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - generic [ref=e34]:
+              - generic [ref=e35]:
+                - generic [ref=e36]: H-YBCR8Y
+                - generic [ref=e37]: confirmed
+                - generic [ref=e38]: "#116875"
+              - heading "Hollywood Monsoon Night — Los Angeles" [level=3] [ref=e39]
+              - generic [ref=e40]:
+                - generic [ref=e41]: 📅 12 Jul 2026
+                - generic [ref=e42]: 🎫 1 ticket
+                - generic [ref=e43]: 📍 Los Angeles
+                - generic [ref=e44]: 🗓 Booked 10 Aug 2026
+            - generic [ref=e45]:
+              - paragraph [ref=e46]: $2,500
+              - paragraph [ref=e47]: total
+          - generic [ref=e48]:
+            - link "View Details" [ref=e49] [cursor=pointer]:
+              - /url: /bookings/116875
+              - button "View Details" [ref=e50]
+            - button "Cancel Booking" [ref=e51] [cursor=pointer]
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - generic [ref=e54]:
+              - generic [ref=e55]:
+                - generic [ref=e56]: H-CRK7AH
+                - generic [ref=e57]: confirmed
+                - generic [ref=e58]: "#116853"
+              - heading "Hollywood Monsoon Night — Los Angeles" [level=3] [ref=e59]
+              - generic [ref=e60]:
+                - generic [ref=e61]: 📅 12 Jul 2026
+                - generic [ref=e62]: 🎫 1 ticket
+                - generic [ref=e63]: 📍 Los Angeles
+                - generic [ref=e64]: 🗓 Booked 10 Aug 2026
+            - generic [ref=e65]:
+              - paragraph [ref=e66]: $2,500
+              - paragraph [ref=e67]: total
+          - generic [ref=e68]:
+            - link "View Details" [ref=e69] [cursor=pointer]:
+              - /url: /bookings/116853
+              - button "View Details" [ref=e70]
+            - button "Cancel Booking" [ref=e71] [cursor=pointer]
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]:
+              - generic [ref=e75]:
+                - generic [ref=e76]: H-ZS6RTL
+                - generic [ref=e77]: confirmed
+                - generic [ref=e78]: "#116833"
+              - heading "Hollywood Monsoon Night — Los Angeles" [level=3] [ref=e79]
+              - generic [ref=e80]:
+                - generic [ref=e81]: 📅 12 Jul 2026
+                - generic [ref=e82]: 🎫 1 ticket
+                - generic [ref=e83]: 📍 Los Angeles
+                - generic [ref=e84]: 🗓 Booked 10 Aug 2026
+            - generic [ref=e85]:
+              - paragraph [ref=e86]: $2,500
+              - paragraph [ref=e87]: total
+          - generic [ref=e88]:
+            - link "View Details" [ref=e89] [cursor=pointer]:
+              - /url: /bookings/116833
+              - button "View Details" [ref=e90]
+            - button "Cancel Booking" [ref=e91] [cursor=pointer]
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - generic [ref=e94]:
+              - generic [ref=e95]:
+                - generic [ref=e96]: H-00RREC
+                - generic [ref=e97]: confirmed
+                - generic [ref=e98]: "#116818"
+              - heading "Hollywood Monsoon Night — Los Angeles" [level=3] [ref=e99]
+              - generic [ref=e100]:
+                - generic [ref=e101]: 📅 12 Jul 2026
+                - generic [ref=e102]: 🎫 1 ticket
+                - generic [ref=e103]: 📍 Los Angeles
+                - generic [ref=e104]: 🗓 Booked 10 Aug 2026
+            - generic [ref=e105]:
+              - paragraph [ref=e106]: $2,500
+              - paragraph [ref=e107]: total
+          - generic [ref=e108]:
+            - link "View Details" [ref=e109] [cursor=pointer]:
+              - /url: /bookings/116818
+              - button "View Details" [ref=e110]
+            - button "Cancel Booking" [ref=e111] [cursor=pointer]
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - generic [ref=e114]:
+              - generic [ref=e115]:
+                - generic [ref=e116]: H-FE0HQU
+                - generic [ref=e117]: confirmed
+                - generic [ref=e118]: "#116738"
+              - heading "Hollywood Monsoon Night — Los Angeles" [level=3] [ref=e119]
+              - generic [ref=e120]:
+                - generic [ref=e121]: 📅 12 Jul 2026
+                - generic [ref=e122]: 🎫 1 ticket
+                - generic [ref=e123]: 📍 Los Angeles
+                - generic [ref=e124]: 🗓 Booked 10 Aug 2026
+            - generic [ref=e125]:
+              - paragraph [ref=e126]: $2,500
+              - paragraph [ref=e127]: total
+          - generic [ref=e128]:
+            - link "View Details" [ref=e129] [cursor=pointer]:
+              - /url: /bookings/116738
+              - button "View Details" [ref=e130]
+            - button "Cancel Booking" [ref=e131] [cursor=pointer]
+        - generic [ref=e132]:
+          - generic [ref=e133]:
+            - generic [ref=e134]:
+              - generic [ref=e135]:
+                - generic [ref=e136]: H-E93NMS
+                - generic [ref=e137]: confirmed
+                - generic [ref=e138]: "#116734"
+              - heading "Hollywood Monsoon Night — Los Angeles" [level=3] [ref=e139]
+              - generic [ref=e140]:
+                - generic [ref=e141]: 📅 12 Jul 2026
+                - generic [ref=e142]: 🎫 1 ticket
+                - generic [ref=e143]: 📍 Los Angeles
+                - generic [ref=e144]: 🗓 Booked 10 Aug 2026
+            - generic [ref=e145]:
+              - paragraph [ref=e146]: $2,500
+              - paragraph [ref=e147]: total
+          - generic [ref=e148]:
+            - link "View Details" [ref=e149] [cursor=pointer]:
+              - /url: /bookings/116734
+              - button "View Details" [ref=e150]
+            - button "Cancel Booking" [ref=e151] [cursor=pointer]
+        - generic [ref=e152]:
+          - generic [ref=e153]:
+            - generic [ref=e154]:
+              - generic [ref=e155]:
+                - generic [ref=e156]: H-BLV7AK
+                - generic [ref=e157]: confirmed
+                - generic [ref=e158]: "#116733"
+              - heading "Hollywood Monsoon Night — Los Angeles" [level=3] [ref=e159]
+              - generic [ref=e160]:
+                - generic [ref=e161]: 📅 12 Jul 2026
+                - generic [ref=e162]: 🎫 1 ticket
+                - generic [ref=e163]: 📍 Los Angeles
+                - generic [ref=e164]: 🗓 Booked 10 Aug 2026
+            - generic [ref=e165]:
+              - paragraph [ref=e166]: $2,500
+              - paragraph [ref=e167]: total
+          - generic [ref=e168]:
+            - link "View Details" [ref=e169] [cursor=pointer]:
+              - /url: /bookings/116733
+              - button "View Details" [ref=e170]
+            - button "Cancel Booking" [ref=e171] [cursor=pointer]
+  - contentinfo [ref=e172]:
+    - generic [ref=e173]:
+      - generic [ref=e174]:
+        - generic [ref=e175]:
+          - heading "Rahul Shetty Academy" [level=3] [ref=e176]
+          - paragraph [ref=e177]: India's leading QA automation training academy — empowering engineers to build real-world testing skills.
+        - generic [ref=e178]:
+          - heading "Popular Courses" [level=3] [ref=e179]
+          - list [ref=e180]:
+            - listitem [ref=e181]:
+              - link "Selenium WebDriver with Java" [ref=e182] [cursor=pointer]:
+                - /url: https://rahulshettyacademy.com
+            - listitem [ref=e183]:
+              - link "Playwright with JavaScript" [ref=e184] [cursor=pointer]:
+                - /url: https://rahulshettyacademy.com
+            - listitem [ref=e185]:
+              - link "RestAssured API Testing" [ref=e186] [cursor=pointer]:
+                - /url: https://rahulshettyacademy.com
+            - listitem [ref=e187]:
+              - link "Cypress End-to-End Testing" [ref=e188] [cursor=pointer]:
+                - /url: https://rahulshettyacademy.com
+            - listitem [ref=e189]:
+              - link "Appium Mobile Testing" [ref=e190] [cursor=pointer]:
+                - /url: https://rahulshettyacademy.com
+        - generic [ref=e191]:
+          - heading "QA Job Hiring Platform" [level=3] [ref=e192]
+          - paragraph [ref=e193]: Get hired faster — take skill assessments trusted by top QA employers worldwide.
+          - link "techsmarthire.com →" [ref=e194] [cursor=pointer]:
+            - /url: https://techsmarthire.com
+        - generic [ref=e195]:
+          - heading "EventHub Practice App" [level=3] [ref=e196]
+          - list [ref=e197]:
+            - listitem [ref=e198]:
+              - link "Browse Events" [ref=e199] [cursor=pointer]:
+                - /url: /events
+            - listitem [ref=e200]:
+              - link "My Bookings" [ref=e201] [cursor=pointer]:
+                - /url: /bookings
+            - listitem [ref=e202]:
+              - link "Manage Events" [ref=e203] [cursor=pointer]:
+                - /url: /admin/events
+            - listitem [ref=e204]:
+              - link "API Documentation" [ref=e205] [cursor=pointer]:
+                - /url: https://api.eventhub.rahulshettyacademy.com/api/docs
+      - generic [ref=e206]:
+        - paragraph [ref=e207]: © 2026 Rahul Shetty Academy. All rights reserved.
+        - generic [ref=e208]:
+          - link "rahulshettyacademy.com →" [ref=e209] [cursor=pointer]:
+            - /url: https://rahulshettyacademy.com
+          - link "techsmarthire.com →" [ref=e210] [cursor=pointer]:
+            - /url: https://techsmarthire.com
+  - alert [ref=e211]
+```
+
+# Test source
+
+```ts
+  1  | import { BasePage } from './BasePage';
+  2  | import { Logger } from '../utils/Logger';
+  3  | import { Page, Locator, expect } from '@playwright/test';
+  4  | 
+  5  | 
+  6  | export class BookingHollywoodPage extends BasePage {
+  7  | 
+  8  |     private bookingRefs: Locator;
+  9  |     private bookingCards: Locator;
+  10 | 
+  11 |     constructor(page: Page) {
+  12 | 
+  13 |         super(page);
+  14 |         this.bookingRefs = page.locator('.booking-ref');
+  15 |         this.bookingCards = page.locator('#booking-card');
+  16 | 
+  17 |     }
+  18 | 
+  19 |     async getAllBookingRefs(): Promise<string[]> {
+  20 |         const count = await this.bookingRefs.count();
+  21 |         const refs: string[] = [];
+  22 | 
+  23 |         for (let i = 0; i < count; i++) {
+  24 |             const refText = await this.bookingRefs.nth(i).textContent();
+  25 |             if (refText) {
+  26 |                 refs.push(refText.trim());
+  27 |             }
+  28 |         }
+  29 |         return refs;
+  30 |     }
+  31 | 
+  32 |     async cancelBookingByRef(ref: string): Promise<void> {
+  33 |         const count = await this.bookingCards.count();
+  34 |         Logger.info(`Found ${count} booking cards`);
+  35 | 
+  36 |         for (let i = 0; i < count; i++) {
+  37 |             const card = this.bookingCards.nth(i);
+  38 |             const refText = await card.locator('.booking-ref').textContent();
+  39 | 
+  40 |             if (refText?.trim() === ref) {
+  41 |                 Logger.info(`Found matching booking card for ref: ${ref}`);
+  42 |                 await card.getByRole('button', { name: 'Cancel Booking' }).click();
+  43 |                 return;
+  44 |             }
+  45 |         }
+  46 | 
+  47 |         throw new Error(`Booking reference ${ref} not found on My Bookings page`);
+  48 |     }
+  49 | 
+  50 | 
+  51 |     async cancelBookingByRefe(ref: string): Promise<void> {
+  52 |         Logger.info(`Attempting to cancel booking with ref: ${ref}`);
+  53 | 
+  54 |         // Attach dialog handler before clicking cancel
+  55 |         this.page.on('dialog', async dialog => {
+  56 |             Logger.info(`Dialog message: ${dialog.message()}`);
+  57 |             await dialog.accept();
+  58 |         });
+  59 | 
+  60 |         const count = await this.bookingRefs.count();
+  61 |         for (let i = 0; i < count; i++) {
+  62 |             const refText = await this.bookingRefs.nth(i).textContent();
+  63 |             if (refText?.trim() === ref) {
+  64 |                 Logger.info(`Found booking card for ref: ${ref}`);
+  65 |                 // Scope to the card containing this ref
+  66 |                 const card = this.bookingRefs.nth(i).locator('..'); // parent card
+> 67 |                 await card.getByRole('button', { name: 'Cancel Booking' }).click();
+     |                                                                            ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  68 |                 break;
+  69 |             }
+  70 |         }
+  71 | 
+  72 |         // After cancellation, re-check all refs
+  73 |         const remainingRefs = await this.getAllBookingRefs();
+  74 |         await expect(remainingRefs).not.toContain(ref);
+  75 |         Logger.info(`Booking with ref ${ref} successfully cancelled`);
+  76 | 
+  77 |     }
+  78 | }
+```

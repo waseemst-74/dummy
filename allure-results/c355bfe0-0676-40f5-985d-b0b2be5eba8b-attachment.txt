@@ -1,0 +1,26 @@
+[INFO] 10/8/2026, 11:59:32 pm : Initializing POManager with logged-in page...
+[INFO] 10/8/2026, 11:59:32 pm : Navigating to dashboard before each test...
+Navigated to: https://eventhub.rahulshettyacademy.com/
+[INFO] 10/8/2026, 11:59:32 pm : Searching for an opportunity with invalid data...
+[INFO] 10/8/2026, 11:59:32 pm : Looking for Hollywood Monsoon Night card...
+[INFO] 10/8/2026, 11:59:32 pm : Clicking element: locator('article:has-text(\'Hollywood Monsoon Night — Los Angeles\')').locator('text=Book Now')
+[INFO] 10/8/2026, 11:59:33 pm : Clicked Book Now for Hollywood Monsoon Night — Los Angeles.
+[INFO] 10/8/2026, 11:59:33 pm : Clicked on Book Now button for Hollywood Monsoon Night
+[INFO] 10/8/2026, 11:59:33 pm : Filling booking form...
+[INFO] 10/8/2026, 11:59:33 pm : Typing into locator('#customerName'): Dr. Ismael Littel
+[INFO] 10/8/2026, 11:59:33 pm : Typing into locator('#customer-email'): Olga.Boyer34@gmail.com
+[INFO] 10/8/2026, 11:59:33 pm : Typing into locator('#phone'): 3559495601
+[INFO] 10/8/2026, 11:59:33 pm : Adding 1 members...
+[INFO] 10/8/2026, 11:59:34 pm : Total price displayed: $2,500
+[INFO] 10/8/2026, 11:59:34 pm : Confirming booking...
+[INFO] 10/8/2026, 11:59:34 pm : Clicking element: locator('#confirm-booking')
+Booking Ref extracted: H-8TH1VT
+[INFO] 10/8/2026, 11:59:34 pm : View Booking details
+[INFO] 10/8/2026, 11:59:34 pm : Clicking element: getByText('View My Bookings')
+[INFO] 10/8/2026, 11:59:34 pm : Booking confirmed for the user Dr. Ismael Littel
+[INFO] 10/8/2026, 11:59:35 pm : All booking refs on My Bookings page: H-8TH1VT,H-CRZ5IB,H-8O7JSD,H-VJS5CJ,H-00RREC,H-FE0HQU,H-E93NMS
+Booking reference ID is : H-8TH1VT
+[INFO] 10/8/2026, 11:59:35 pm : Navigating to My bookings...
+[INFO] 10/8/2026, 11:59:35 pm : Clicking element: locator('#nav-bookings')
+[INFO] 10/8/2026, 11:59:35 pm : Attempting to cancel booking with ref: H-8TH1VT
+[INFO] 10/8/2026, 11:59:35 pm : Found booking card for ref: H-8TH1VT

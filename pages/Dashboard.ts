@@ -8,15 +8,15 @@ export class Dashboard extends BasePage {
     private bookNowButton: Locator;
     private eventCard: Locator;
     private confirmBookingButton: Locator;
+    private myBookings: Locator
 
     constructor(page: Page) {
 
         super(page);
         this.bookNowButton = page.locator('#book-now-btn').first();
-        //this.eventCard = page.locator("//div[contains(@class,'event-card')][.//text()[contains(.,'Hollywood Monsoon Night — Los Angeles')]]");
-        //this.eventCard = page.locator("//article[.//h3[contains(text(),'Hollywood Monsoon Night — Los Angeles')]]//button[contains(.,'Book Now')]");
         this.eventCard = page.locator("article:has-text('Hollywood Monsoon Night — Los Angeles') >> text=Book Now");
         this.confirmBookingButton = page.locator('#confirm-booking')
+        this.myBookings = page.locator('#nav-bookings')
     }
 
 
@@ -34,5 +34,9 @@ export class Dashboard extends BasePage {
         await expect(this.page.getByText('Hand-picked upcoming events just for you')).toBeVisible({ timeout: 10000 });
         await expect(this.page).toHaveURL(`${process.env.BASE_URL}events/2`);
         await expect(this.confirmBookingButton).toBeVisible();
+    }
+
+    async goToMyBookings() {
+        await this.clickElement(this.myBookings);
     }
 }

@@ -1,0 +1,27 @@
+[INFO] 11/8/2026, 12:03:53 am : Initializing POManager with logged-in page...
+[INFO] 11/8/2026, 12:03:53 am : Navigating to dashboard before each test...
+Navigated to: https://eventhub.rahulshettyacademy.com/
+[INFO] 11/8/2026, 12:03:54 am : Searching for an opportunity with invalid data...
+[INFO] 11/8/2026, 12:03:54 am : Looking for Hollywood Monsoon Night card...
+[INFO] 11/8/2026, 12:03:54 am : Clicking element: locator('article:has-text(\'Hollywood Monsoon Night — Los Angeles\')').locator('text=Book Now')
+[INFO] 11/8/2026, 12:03:55 am : Clicked Book Now for Hollywood Monsoon Night — Los Angeles.
+[INFO] 11/8/2026, 12:03:55 am : Clicked on Book Now button for Hollywood Monsoon Night
+[INFO] 11/8/2026, 12:03:55 am : Filling booking form...
+[INFO] 11/8/2026, 12:03:55 am : Typing into locator('#customerName'): Billy Parisian
+[INFO] 11/8/2026, 12:03:55 am : Typing into locator('#customer-email'): Eva.Goodwin69@hotmail.com
+[INFO] 11/8/2026, 12:03:55 am : Typing into locator('#phone'): 6273973586
+[INFO] 11/8/2026, 12:03:55 am : Adding 1 members...
+[INFO] 11/8/2026, 12:03:55 am : Total price displayed: $2,500
+[INFO] 11/8/2026, 12:03:55 am : Confirming booking...
+[INFO] 11/8/2026, 12:03:55 am : Clicking element: locator('#confirm-booking')
+Booking Ref extracted: H-AB2DHZ
+[INFO] 11/8/2026, 12:03:56 am : View Booking details
+[INFO] 11/8/2026, 12:03:56 am : Clicking element: getByText('View My Bookings')
+[INFO] 11/8/2026, 12:03:56 am : Booking confirmed for the user Billy Parisian
+[INFO] 11/8/2026, 12:03:56 am : All booking refs on My Bookings page: H-AB2DHZ
+Booking reference ID is : H-AB2DHZ
+[INFO] 11/8/2026, 12:03:56 am : Navigating to My bookings...
+[INFO] 11/8/2026, 12:03:56 am : Clicking element: locator('#nav-bookings')
+[INFO] 11/8/2026, 12:03:56 am : Attempting to cancel booking with ref: H-AB2DHZ
+[INFO] 11/8/2026, 12:03:56 am : Found booking card for ref: H-AB2DHZ
+[INFO] 11/8/2026, 12:04:00 am : Booking with ref H-AB2DHZ successfully cancelled

@@ -1,0 +1,26 @@
+[INFO] 10/8/2026, 11:44:48 pm : Initializing POManager with logged-in page...
+[INFO] 10/8/2026, 11:44:48 pm : Navigating to dashboard before each test...
+Navigated to: https://eventhub.rahulshettyacademy.com/
+[INFO] 10/8/2026, 11:44:49 pm : Searching for an opportunity with invalid data...
+[INFO] 10/8/2026, 11:44:49 pm : Looking for Hollywood Monsoon Night card...
+[INFO] 10/8/2026, 11:44:49 pm : Clicking element: locator('article:has-text(\'Hollywood Monsoon Night — Los Angeles\')').locator('text=Book Now')
+[INFO] 10/8/2026, 11:44:50 pm : Clicked Book Now for Hollywood Monsoon Night — Los Angeles.
+[INFO] 10/8/2026, 11:44:50 pm : Clicked on Book Now button for Hollywood Monsoon Night
+[INFO] 10/8/2026, 11:44:50 pm : Filling booking form...
+[INFO] 10/8/2026, 11:44:50 pm : Typing into locator('#customerName'): Adrienne Herzog
+[INFO] 10/8/2026, 11:44:50 pm : Typing into locator('#customer-email'): James.Gutkowski8@yahoo.com
+[INFO] 10/8/2026, 11:44:50 pm : Typing into locator('#phone'): 6213500819
+[INFO] 10/8/2026, 11:44:50 pm : Adding 1 members...
+[INFO] 10/8/2026, 11:44:50 pm : Total price displayed: $2,500
+[INFO] 10/8/2026, 11:44:50 pm : Confirming booking...
+[INFO] 10/8/2026, 11:44:50 pm : Clicking element: locator('#confirm-booking')
+Booking Ref extracted: H-O54BWV
+[INFO] 10/8/2026, 11:44:51 pm : View Booking details
+[INFO] 10/8/2026, 11:44:51 pm : Clicking element: getByText('View My Bookings')
+[INFO] 10/8/2026, 11:44:51 pm : Booking confirmed for the user Adrienne Herzog
+[INFO] 10/8/2026, 11:44:51 pm : All booking refs on My Bookings page: H-O54BWV,H-7MK5PO,H-UQXWDI,H-ZS6RTL,H-00RREC,H-FE0HQU,H-E93NMS
+Booking reference ID is : H-O54BWV
+[INFO] 10/8/2026, 11:44:51 pm : Navigating to My bookings...
+[INFO] 10/8/2026, 11:44:51 pm : Clicking element: locator('#nav-bookings')
+[INFO] 10/8/2026, 11:44:51 pm : Attempting to cancel booking with ref: H-O54BWV
+[INFO] 10/8/2026, 11:44:51 pm : Found booking card for ref: H-O54BWV
