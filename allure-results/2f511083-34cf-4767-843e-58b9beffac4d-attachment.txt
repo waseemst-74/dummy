@@ -1,0 +1,27 @@
+[INFO] 14/8/2026, 5:20:47 pm : Initializing POManager with logged-in page...
+[INFO] 14/8/2026, 5:20:47 pm : Navigating to dashboard before each test...
+Navigated to: https://eventhub.rahulshettyacademy.com/
+[INFO] 14/8/2026, 5:20:50 pm : Landed on Dashboard for Event booking...
+[INFO] 14/8/2026, 5:20:50 pm : Looking for Hollywood Monsoon Night card...
+[INFO] 14/8/2026, 5:20:50 pm : Clicking element: locator('article:has-text(\'Hollywood Monsoon Night — Los Angeles\')').locator('text=Book Now')
+[INFO] 14/8/2026, 5:20:52 pm : Clicked Book Now for Hollywood Monsoon Night — Los Angeles.
+[INFO] 14/8/2026, 5:20:54 pm : Clicked on Book Now button for Hollywood Monsoon Night
+[INFO] 14/8/2026, 5:20:54 pm : Filling booking form...
+[INFO] 14/8/2026, 5:20:54 pm : Typing into locator('#customerName'): Casimer Rath
+[INFO] 14/8/2026, 5:20:54 pm : Typing into locator('#customer-email'): Ayla_Rau@hotmail.com
+[INFO] 14/8/2026, 5:20:54 pm : Typing into locator('#phone'): 5883754234
+[INFO] 14/8/2026, 5:20:54 pm : Adding 1 members...
+[INFO] 14/8/2026, 5:20:54 pm : Total price displayed: $2,500
+[INFO] 14/8/2026, 5:20:54 pm : Confirming booking...
+[INFO] 14/8/2026, 5:20:54 pm : Clicking element: locator('#confirm-booking')
+Booking Ref extracted: H-RD7JHW
+[INFO] 14/8/2026, 5:20:55 pm : View Booking details
+[INFO] 14/8/2026, 5:20:55 pm : Clicking element: getByText('View My Bookings')
+[INFO] 14/8/2026, 5:20:55 pm : Booking confirmed for the user Casimer Rath
+[INFO] 14/8/2026, 5:20:56 pm : All booking refs on My Bookings page: H-RD7JHW
+Booking reference ID is : H-RD7JHW
+[INFO] 14/8/2026, 5:20:56 pm : Navigating to My bookings...
+[INFO] 14/8/2026, 5:20:56 pm : Clicking element: locator('#nav-bookings')
+[INFO] 14/8/2026, 5:20:57 pm : Attempting to cancel booking with ref: H-RD7JHW
+[INFO] 14/8/2026, 5:20:57 pm : Found booking card for ref: H-RD7JHW
+[INFO] 14/8/2026, 5:21:01 pm : Booking with ref H-RD7JHW successfully cancelled

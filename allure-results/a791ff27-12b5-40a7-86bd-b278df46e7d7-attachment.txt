@@ -1,0 +1,26 @@
+[INFO] 14/8/2026, 5:10:53 pm : Initializing POManager with logged-in page...
+[INFO] 14/8/2026, 5:10:53 pm : Navigating to dashboard before each test...
+Navigated to: https://eventhub.rahulshettyacademy.com/
+[INFO] 14/8/2026, 5:10:56 pm : Landed on Dashboard for Event booking...
+[INFO] 14/8/2026, 5:10:56 pm : Looking for Hollywood Monsoon Night card...
+[INFO] 14/8/2026, 5:10:56 pm : Clicking element: locator('article:has-text(\'Hollywood Monsoon Night — Los Angeles\')').locator('text=Book Now')
+[INFO] 14/8/2026, 5:10:58 pm : Clicked Book Now for Hollywood Monsoon Night — Los Angeles.
+[INFO] 14/8/2026, 5:11:00 pm : Clicked on Book Now button for Hollywood Monsoon Night
+[INFO] 14/8/2026, 5:11:00 pm : Filling booking form...
+[INFO] 14/8/2026, 5:11:00 pm : Typing into locator('#customerName'): Benedict Hermann
+[INFO] 14/8/2026, 5:11:00 pm : Typing into locator('#customer-email'): Serenity_Olson6@gmail.com
+[INFO] 14/8/2026, 5:11:00 pm : Typing into locator('#phone'): 3763800225
+[INFO] 14/8/2026, 5:11:00 pm : Adding 1 members...
+[INFO] 14/8/2026, 5:11:00 pm : Total price displayed: $2,500
+[INFO] 14/8/2026, 5:11:00 pm : Confirming booking...
+[INFO] 14/8/2026, 5:11:00 pm : Clicking element: locator('#confirm-booking')
+Booking Ref extracted: H-0OSCYQ
+[INFO] 14/8/2026, 5:11:01 pm : View Booking details
+[INFO] 14/8/2026, 5:11:01 pm : Clicking element: getByText('View My Bookings')
+[INFO] 14/8/2026, 5:11:01 pm : Booking confirmed for the user Benedict Hermann
+[INFO] 14/8/2026, 5:11:02 pm : All booking refs on My Bookings page: H-0OSCYQ
+Booking reference ID is : H-0OSCYQ
+[INFO] 14/8/2026, 5:11:02 pm : Navigating to My bookings...
+[INFO] 14/8/2026, 5:11:02 pm : Clicking element: locator('#nav-bookings')
+[INFO] 14/8/2026, 5:11:02 pm : Attempting to cancel booking with ref: H-0OSCYQ
+[INFO] 14/8/2026, 5:11:02 pm : Found booking card for ref: H-0OSCYQ

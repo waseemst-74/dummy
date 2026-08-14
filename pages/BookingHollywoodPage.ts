@@ -73,7 +73,7 @@ export class BookingHollywoodPage extends BasePage {
             }
         }
         await expect(this.page.getByText('Booking cancelled successfully')).toBeVisible();
-
+        await expect(this.page.locator('.booking-ref', { hasText: ref })).toHaveCount(0);
         // After cancellation, re-check all refs
         const remainingRefs = await this.getAllBookingRefs();
         await this.page.waitForLoadState('networkidle')

@@ -29,7 +29,7 @@ test.describe('Confirm Booking', () => {
 
     test('Booking lifecycle for Hollywood Monsoon Night', async ({ page }) => {
         await test.step('Create booking', async () => {
-            Logger.info('Searching for an opportunity with invalid data...');
+            Logger.info('Landed on Dashboard for Event booking...');
             const dashboardPage = poManager.getDashboardPage();
             await dashboardPage.bookHollywoodMonsoonNight();
             Logger.info('Clicked on Book Now button for Hollywood Monsoon Night');
